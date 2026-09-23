@@ -1,0 +1,21 @@
+{
+  "num_contract_nodes": 7487,
+  "num_compiler_nodes": 134,
+  "contract_features_dim": 72,
+  "target_vulnerability_classes": 8,
+  "edge_types": [
+    "('contract', 'compiled_with', 'compiler')",
+    "('compiler', 'compiles', 'contract')",
+    "('contract', 'semantic_knn', 'contract')"
+  ],
+  "num_edges_compiled_with": 7487,
+  "num_edges_semantic_knn": 37435,
+  "total_heterogeneous_edges": 52409,
+  "train_nodes": 5240,
+  "val_nodes": 1123,
+  "test_nodes": 1124,
+  "files_saved": [
+    "data/graph/vs_hgnn_hetero_graph.pt",
+    "data/graph/vs_hgnn_homo_graph.pt"
+  ]
+}

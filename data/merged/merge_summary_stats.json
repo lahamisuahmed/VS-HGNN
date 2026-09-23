@@ -1,0 +1,25 @@
+{
+  "dive_total_addresses": 32766,
+  "dive_labeled_contracts": 22330,
+  "smartbugs_wild_contracts": 972975,
+  "exact_address_overlap": 7487,
+  "overlap_percentage_of_dive": 33.52888490819525,
+  "supervised_benchmark_shape": [
+    7487,
+    66
+  ],
+  "vulnerability_counts_in_supervised_benchmark": {
+    "Reentrancy": 3960,
+    "Access Control": 5641,
+    "Arithmetic": 3247,
+    "Unchecked Return Values": 2024,
+    "DoS": 1326,
+    "Bad Randomness": 229,
+    "Front Running": 197,
+    "Time manipulation": 2116
+  },
+  "mean_transactions_supervised": 3112.711767062909,
+  "median_transactions_supervised": 16.0,
+  "total_transactions_supervised": 23304873,
+  "unique_compilers_supervised": 134
+}

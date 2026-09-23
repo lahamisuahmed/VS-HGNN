@@ -1,0 +1,52 @@
+{
+  "smartbugs_wild": {
+    "total_rows": 972975,
+    "unique_addresses": 972975,
+    "total_transactions": 194744321,
+    "mean_transactions": 200.15346848582953,
+    "median_transactions": 2.0,
+    "max_transactions": 11119405,
+    "zero_balance_contracts": 867427,
+    "non_zero_balance_contracts": 105548,
+    "max_balance_wei": "1.689140690440756e+24",
+    "compiler_versions_count": 359,
+    "top_compiler_versions": {
+      "v0.4.11+commit.68ef5810": 684290,
+      "v0.4.16-nightly.2017.8.11+commit.c84de7fa": 116878,
+      "v0.4.24+commit.e67f0147": 71445,
+      "v0.3.2+commit.81ae2a7": 14101,
+      "v0.4.15+commit.bbb8e64f": 11324,
+      "v0.3.5+commit.5f97274": 10818,
+      "v0.4.23+commit.124ca40d": 9582,
+      "v0.4.19+commit.c4cbbb05": 9439,
+      "v0.4.25+commit.59dbf8f1": 8233,
+      "v0.4.18+commit.9cf6e910": 6418
+    }
+  },
+  "dive": {
+    "total_addresses_sc": 32766,
+    "total_labeled_contracts": 22330,
+    "evm_opcodes_count": 156,
+    "vulnerability_counts": {
+      "Reentrancy": 11400,
+      "Access Control": 16723,
+      "Arithmetic": 9542,
+      "Unchecked Return Values": 5911,
+      "DoS": 3781,
+      "Bad Randomness": 634,
+      "Front Running": 606,
+      "Time manipulation": 6322
+    },
+    "clean_contracts": 2686,
+    "single_vuln_contracts": 4221,
+    "multi_vuln_contracts": 15423,
+    "tools_evaluated": [
+      "MAIAN",
+      "Mythril",
+      "Semgrep",
+      "Slither",
+      "Solhint",
+      "VeriSmart"
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "calibrated_thresholds": {
+    "Reentrancy": {
+      "optimal_tau": 0.53,
+      "val_f1_at_optimal": 1.0
+    },
+    "Access Control": {
+      "optimal_tau": 0.37,
+      "val_f1_at_optimal": 0.9861
+    },
+    "Arithmetic": {
+      "optimal_tau": 0.54,
+      "val_f1_at_optimal": 1.0
+    },
+    "Unchecked Return Values": {
+      "optimal_tau": 0.41,
+      "val_f1_at_optimal": 1.0
+    },
+    "DoS": {
+      "optimal_tau": 0.81,
+      "val_f1_at_optimal": 0.9719
+    },
+    "Bad Randomness": {
+      "optimal_tau": 0.38,
+      "val_f1_at_optimal": 1.0
+    },
+    "Front Running": {
+      "optimal_tau": 0.45,
+      "val_f1_at_optimal": 1.0
+    },
+    "Time manipulation": {
+      "optimal_tau": 0.6,
+      "val_f1_at_optimal": 0.8227
+    }
+  },
+  "vshgnn_calibrated_breakdown": {
+    "Reentrancy": {
+      "optimal_tau": 0.53,
+      "precision": 1.0,
+      "recall": 0.9982,
+      "f1_default": 1.0,
+      "f1_calibrated": 0.9991,
+      "f1_gain": -0.0009
+    },
+    "Access Control": {
+      "optimal_tau": 0.37,
+      "precision": 0.9761,
+      "recall": 0.9939,
+      "f1_default": 0.9823,
+      "f1_calibrated": 0.9849,
+      "f1_gain": 0.0026
+    },
+    "Arithmetic": {
+      "optimal_tau": 0.54,
+      "precision": 0.998,
+      "recall": 1.0,
+      "f1_default": 0.999,
+      "f1_calibrated": 0.999,
+      "f1_gain": 0.0
+    },
+    "Unchecked Return Values": {
+      "optimal_tau": 0.41,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_default": 1.0,
+      "f1_calibrated": 1.0,
+      "f1_gain": 0.0
+    },
+    "DoS": {
+      "optimal_tau": 0.81,
+      "precision": 0.9785,
+      "recall": 0.9333,
+      "f1_default": 0.9576,
+      "f1_calibrated": 0.9554,
+      "f1_gain": -0.0022
+    },
+    "Bad Randomness": {
+      "optimal_tau": 0.38,
+      "precision": 0.9474,
+      "recall": 1.0,
+      "f1_default": 1.0,
+      "f1_calibrated": 0.973,
+      "f1_gain": -0.027
+    },
+    "Front Running": {
+      "optimal_tau": 0.45,
+      "precision": 0.9615,
+      "recall": 1.0,
+      "f1_default": 1.0,
+      "f1_calibrated": 0.9804,
+      "f1_gain": -0.0196
+    },
+    "Time manipulation": {
+      "optimal_tau": 0.6,
+      "precision": 0.8677,
+      "recall": 0.7311,
+      "f1_default": 0.7678,
+      "f1_calibrated": 0.7936,
+      "f1_gain": 0.0258
+    }
+  },
+  "models": {
+    "MAIAN (Symbolic/Trace)": {
+      "paradigm": "Static Symbolic",
+      "macro_f1": 0.002690129449838188,
+      "micro_f1": 0.0061,
+      "hamming_loss": 0.2842
+    },
+    "Semgrep (Pattern Rules)": {
+      "paradigm": "Static Rule-Based",
+      "macro_f1": 0.0014373609005580105,
+      "micro_f1": 0.0032,
+      "hamming_loss": 0.291
+    },
+    "VeriSmart (Automated Verifier)": {
+      "paradigm": "Formal Verification",
+      "macro_f1": 0.10794653389197029,
+      "micro_f1": 0.2642,
+      "hamming_loss": 0.2185
+    },
+    "Solhint (AST Linter)": {
+      "paradigm": "Static Linter",
+      "macro_f1": 0.3623385747562518,
+      "micro_f1": 0.5841,
+      "hamming_loss": 0.1492
+    },
+    "Mythril (Concolic Execution)": {
+      "paradigm": "Concolic Execution",
+      "macro_f1": 0.4271413101510482,
+      "micro_f1": 0.4982,
+      "hamming_loss": 0.1873
+    },
+    "Slither (Dataflow CFG)": {
+      "paradigm": "Static Dataflow",
+      "macro_f1": 0.635491643115413,
+      "micro_f1": 0.7718,
+      "hamming_loss": 0.0984
+    },
+    "Logistic Regression (Class-Weighted)": {
+      "paradigm": "Tabular ML",
+      "macro_f1": 0.9678551516362378,
+      "micro_f1": 0.9738778513612951,
+      "hamming_loss": 0.01579181494661922,
+      "mean_roc_auc": 0.9936246990101092
+    },
+    "Random Forest (Class-Weighted)": {
+      "paradigm": "Ensemble ML",
+      "macro_f1": 0.9711405911628601,
+      "micro_f1": 0.976529292182591,
+      "hamming_loss": 0.014123665480427046,
+      "mean_roc_auc": 0.9935749727141692
+    },
+    "Homogeneous Base GNN (GCN)": {
+      "paradigm": "Homogeneous Graph GNN",
+      "macro_f1": 0.8582531800307821,
+      "micro_f1": 0.9267241379310345,
+      "hamming_loss": 0.045373665480427046,
+      "mean_roc_auc": 0.9854493580737258
+    },
+    "VS-HGNN (Default \u03c4=0.5)": {
+      "paradigm": "Heterogeneous GNN",
+      "macro_f1": 0.9633408571012354,
+      "micro_f1": 0.9647400945110869,
+      "hamming_loss": 0.02157473309608541,
+      "mean_roc_auc": 0.9927556807575111
+    },
+    "VS-HGNN (Calibrated \u03c4*)": {
+      "paradigm": "Heterogeneous GNN + Calibrated Decision Head",
+      "macro_f1": 0.960672797749907,
+      "micro_f1": 0.9699760545220114,
+      "hamming_loss": 0.018127224199288257,
+      "mean_roc_auc": 0.9927556807575111
+    }
+  }
+}
